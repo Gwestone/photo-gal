@@ -13,12 +13,15 @@ import {
   StyledCategoryOptionsList,
   StyledChosenCatalogOption,
   StyledContainer,
-  StyledImagesComponent,
+  StyledImage,
+  StyledImageComponent,
+  StyledImagesComponents,
   StyledLeftCatalog,
   StyledRightCatalog,
   StyledSubTitle,
   StyledTitle,
 } from "@/components/Popular/styled";
+import Image from "next/image";
 
 export default function Popular() {
   return (
@@ -49,7 +52,71 @@ export default function Popular() {
         </StyledRightCatalog>
       </StyledCatalogChange>
       <div className={"infinite-scroll"}>
-        <StyledImagesComponent></StyledImagesComponent>
+        <StyledImagesComponents>
+          <StyledImageComponent>
+            <StyledImage
+              src={"/content/photo1.jpg"}
+              alt={"photo1"}
+              height={320}
+            />
+          </StyledImageComponent>
+          <StyledImageComponent>
+            <StyledImage
+              src={"/content/photo2.jpg"}
+              alt={"photo2"}
+              height={320}
+            />
+          </StyledImageComponent>
+          <StyledImageComponent>
+            <StyledImage
+              src={"/content/photo3.jpg"}
+              alt={"photo3"}
+              height={320}
+            />
+          </StyledImageComponent>
+          <StyledImageComponent>
+            <StyledImage
+              src={"/content/photo4.jpg"}
+              alt={"photo4"}
+              height={320}
+            />
+          </StyledImageComponent>
+          <StyledImageComponent>
+            <StyledImage
+              src={"/content/photo5.jpg"}
+              alt={"photo5"}
+              height={320}
+            />
+          </StyledImageComponent>
+          <StyledImageComponent>
+            <StyledImage
+              src={"/content/photo6.jpg"}
+              alt={"photo6"}
+              height={320}
+            />
+          </StyledImageComponent>
+          <StyledImageComponent>
+            <StyledImage
+              src={"/content/photo7.jpg"}
+              alt={"photo7"}
+              height={320}
+            />
+          </StyledImageComponent>
+          <StyledImageComponent>
+            <StyledImage
+              src={"/content/photo8.jpg"}
+              alt={"photo8"}
+              height={320}
+            />
+          </StyledImageComponent>
+          <StyledImageComponent>
+            <StyledImage
+              src={"/content/photo9.jpg"}
+              alt={"photo9"}
+              height={320}
+            />
+          </StyledImageComponent>
+        </StyledImagesComponents>
       </div>
     </StyledContainer>
   );

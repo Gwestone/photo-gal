@@ -4,6 +4,7 @@ export const StyledContainer = styled.div`
   padding-left: 64px;
   padding-right: 64px;
   width: calc(100% - 128px);
+  padding-bottom: 64px;
 `;
 
 export const StyledTitle = styled.div`
@@ -86,11 +87,42 @@ export const StyledCategoryButton = styled.div`
   padding: 8px 22px;
 `;
 
-export const StyledImagesComponent = styled.div`
+export const StyledImagesComponents = styled.div`
   height: fit-content;
   font-size: 16px;
   margin-top: 8px;
   background-color: transparent;
-  border: 2px solid rgb(215, 216, 219);
-  padding: 8px 22px;
+  //border: 2px solid rgb(215, 216, 219);
+  //padding: 8px 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+  &:after {
+    content: "";
+    flex-grow: 999999999;
+  }
+`;
+
+export const StyledImageComponent = styled.div`
+  height: 320px;
+  flex-grow: 1;
+  position: relative;
+
+  cursor: pointer;
+  overflow: hidden;
+`;
+
+export const StyledImage = styled.img`
+  height: 320px;
+  flex-grow: 1;
+  position: relative;
+
+  min-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+
+  cursor: pointer;
+  overflow: hidden;
 `;
