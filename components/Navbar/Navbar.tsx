@@ -19,7 +19,7 @@ export default function Navbar() {
       <StyledNavbar>
         <StyledNavbarIcon>
           <Image
-            src={"./next.svg"}
+            src={"/next.svg"}
             alt={"logo"}
             width={80}
             height={22}
