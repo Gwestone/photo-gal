@@ -2,25 +2,19 @@
 
 import React from "react";
 import PhotoComponent from "@/components/Photo/Photo";
-import { StyledContainer, StyledWrapper } from "@/components/Photo/styled";
-import { BsFullscreenExit } from "react-icons/bs";
+import { StyledContainer } from "@/components/Photo/styled";
+import PhotoContentComponent from "@/components/Photo/PhotoContentComponent";
+import constants from "@/lib/constants";
 
 export default function Photo({ params: { id } }: { params: { id: string } }) {
+  const photos = constants.photos;
+
+  const photo = photos.filter((photo) => photo.Url === id);
+
   return (
     <StyledContainer>
-      <StyledWrapper>
-        <PhotoComponent />
-        <BsFullscreenExit
-          color={"white"}
-          style={{
-            position: "absolute",
-            top: "2vh",
-            right: "4vw",
-            width: "32px",
-            height: "32px",
-          }}
-        />
-      </StyledWrapper>
+      <PhotoComponent photo={photo[0]} />
+      <PhotoContentComponent photo={photo[0]} />
     </StyledContainer>
   );
 }

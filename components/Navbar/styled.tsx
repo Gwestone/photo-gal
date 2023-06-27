@@ -4,6 +4,10 @@ export const StyledNavbarWrapper = styled.div`
   padding-left: 64px;
   padding-right: 64px;
   width: calc(100% - 128px);
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 9999;
 `;
 
 export const StyledNavbar = styled.div`

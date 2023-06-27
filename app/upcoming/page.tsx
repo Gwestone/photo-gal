@@ -3,16 +3,16 @@
 import React from "react";
 import { StyledContainer } from "@/components/Popular/styled";
 import constants from "@/lib/constants";
-import FreshTitleComponent from "@/components/Fresh/FreshTitleComponent";
-import FreshImagesListComponent from "@/components/Fresh/FreshImagesListComponent";
+import UpcomingTitleComponent from "@/components/Upcoming/UpcomingTitleComponent";
+import UpcomingImagesListComponent from "@/components/Upcoming/UpcomingImagesListComponent";
 
 export default function Popular() {
   const photos = constants.photos;
 
   return (
     <StyledContainer>
-      <FreshTitleComponent />
-      <FreshImagesListComponent photos={photos} />
+      <UpcomingTitleComponent />
+      <UpcomingImagesListComponent photos={photos} />
     </StyledContainer>
   );
 }

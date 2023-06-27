@@ -1,11 +1,10 @@
 import "./globals.css";
-import { Roboto } from "next/font/google";
+import { Arimo } from "next/font/google";
 import Navbar from "@/components/Navbar/Navbar";
 import React from "react";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
 import StyledComponentsRegistry from "@/lib/registry";
 
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
+const font = Arimo({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -22,7 +21,7 @@ export default function RootLayout({
       <head>
         <title>Your App</title>
       </head>
-      <body style={roboto.style}>
+      <body style={font.style}>
         <StyledComponentsRegistry>
           <div>
             <Navbar />
